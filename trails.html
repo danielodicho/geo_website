@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover hidden hiking trails and nature spots around Asheville, North Carolina">
+    <title>Trails | Hidden Trails Asheville</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b73c87b2a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Hidden Trails Asheville</a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="trails.html" class="active">Trails</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Explore Hidden Trails</h1>
+            <p>Discover the lesser-known natural wonders around Asheville</p>
+        </div>
+    </section>
+
+    <main class="site-main">
+        <section class="trail-filters">
+            <div class="container">
+                <div class="filter-container">
+                    <div class="filter-group">
+                        <label for="difficulty">Difficulty:</label>
+                        <select id="difficulty" name="difficulty">
+                            <option value="all">All Levels</option>
+                            <option value="easy">Easy</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="challenging">Challenging</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="feature">Feature:</label>
+                        <select id="feature" name="feature">
+                            <option value="all">All Features</option>
+                            <option value="waterfall">Waterfalls</option>
+                            <option value="view">Mountain Views</option>
+                            <option value="wildflower">Wildflowers</option>
+                            <option value="forest">Forest Immersion</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="distance">Distance:</label>
+                        <select id="distance" name="distance">
+                            <option value="all">Any Distance</option>
+                            <option value="short">Short (Under 2 miles)</option>
+                            <option value="medium">Medium (2-5 miles)</option>
+                            <option value="long">Long (5+ miles)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="search">Search:</label>
+                        <input type="text" id="search" name="search" placeholder="Search trails...">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trails-list">
+            <div class="container">
+                <div class="trail-grid full-grid">
+                    <article class="trail-card">
+                        <div class="trail-image">
+                            <img src="images/pexels-federated-art-241849155-12493796.jpg" alt="Scenic view from Cedar Rock Mountain">
+                        </div>
+                        <div class="trail-content">
+                            <span class="trail-difficulty moderate">Moderate</span>
+                            <h3><a href="posts/cedar-rock-trail.html">Cedar Rock Mountain Trail</a></h3>
+                            <p>A hidden gem in Pisgah National Forest with breathtaking panoramic views and unique rock formations.</p>
+                            <div class="trail-meta">
+                                <span><i class="fas fa-route"></i> 4.5 miles</span>
+                                <span><i class="fas fa-mountain"></i> 800 ft elevation</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 45 min from Asheville</span>
+                            </div>
+                            <a href="posts/cedar-rock-trail.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="trail-card">
+                        <div class="trail-image">
+                            <img src="images/pexels-leah-newhouse-50725-20204359.jpg" alt="Waterfall on Grassy Creek">
+                        </div>
+                        <div class="trail-content">
+                            <span class="trail-difficulty easy">Easy</span>
+                            <h3><a href="posts/grassy-creek-falls.html">Grassy Creek Falls</a></h3>
+                            <p>A peaceful, lesser-known waterfall hike perfect for families and those seeking tranquility away from crowds.</p>
+                            <div class="trail-meta">
+                                <span><i class="fas fa-route"></i> 1.2 miles</span>
+                                <span><i class="fas fa-mountain"></i> 200 ft elevation</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 30 min from Asheville</span>
+                            </div>
+                            <a href="posts/grassy-creek-falls.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="trail-card">
+                        <div class="trail-image">
+                            <img src="images/pexels-leah-newhouse-50725-20204362.jpg" alt="View from Black Balsam Knob">
+                        </div>
+                        <div class="trail-content">
+                            <span class="trail-difficulty challenging">Challenging</span>
+                            <h3><a href="posts/black-balsam-knob.html">Black Balsam Knob Loop</a></h3>
+                            <p>Experience the magic of the Appalachian balds with stunning 360-degree views and alpine-like meadows.</p>
+                            <div class="trail-meta">
+                                <span><i class="fas fa-route"></i> 5.8 miles</span>
+                                <span><i class="fas fa-mountain"></i> 1,200 ft elevation</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 50 min from Asheville</span>
+                            </div>
+                            <a href="posts/black-balsam-knob.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="trail-card">
+                        <div class="trail-image">
+                            <img src="images/pexels-airamdphoto-9637652.jpg" alt="Little East Fork Trail">
+                        </div>
+                        <div class="trail-content">
+                            <span class="trail-difficulty moderate">Moderate</span>
+                            <h3><a href="posts/little-east-fork.html">Little East Fork Trail</a></h3>
+                            <p>A secluded forest trail following a pristine mountain stream with several small cascades and abundant wildlife.</p>
+                            <div class="trail-meta">
+                                <span><i class="fas fa-route"></i> 3.4 miles</span>
+                                <span><i class="fas fa-mountain"></i> 600 ft elevation</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 40 min from Asheville</span>
+                            </div>
+                            <a href="posts/little-east-fork.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="trail-card">
+                        <div class="trail-image">
+                            <img src="images/pexels-airamdphoto-9637655.jpg" alt="Wildflowers at Craggy Gardens">
+                        </div>
+                        <div class="trail-content">
+                            <span class="trail-difficulty easy">Easy</span>
+                            <h3><a href="posts/craggy-gardens-meadow.html">Craggy Gardens Meadow Trail</a></h3>
+                            <p>A lesser-known side trail at Craggy Gardens featuring spectacular rhododendron displays and mountain views.</p>
+                            <div class="trail-meta">
+                                <span><i class="fas fa-route"></i> 1.9 miles</span>
+                                <span><i class="fas fa-mountain"></i> 300 ft elevation</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 35 min from Asheville</span>
+                            </div>
+                            <a href="posts/craggy-gardens-meadow.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="trail-card">
+                        <div class="trail-image">
+                            <img src="images/pexels-airamdphoto-9637660.jpg" alt="Douglas Falls">
+                        </div>
+                        <div class="trail-content">
+                            <span class="trail-difficulty challenging">Challenging</span>
+                            <h3><a href="posts/douglas-falls-backway.html">Douglas Falls Back Way</a></h3>
+                            <p>The road less traveled to a stunning 70-foot waterfall, offering solitude and old-growth forest scenery.</p>
+                            <div class="trail-meta">
+                                <span><i class="fas fa-route"></i> 6.5 miles</span>
+                                <span><i class="fas fa-mountain"></i> 1,500 ft elevation</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 45 min from Asheville</span>
+                            </div>
+                            <a href="posts/douglas-falls-backway.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="trail-card">
+                        <div class="trail-image">
+                            <img src="images/pexels-alteredsnaps-16881835.jpg" alt="Fryingpan Mountain Lookout Tower">
+                        </div>
+                        <div class="trail-content">
+                            <span class="trail-difficulty moderate">Moderate</span>
+                            <h3><a href="posts/fryingpan-lookout.html">Fryingpan Mountain Lookout</a></h3>
+                            <p>A hidden alternative to nearby popular trails, featuring a historic fire tower with spectacular panoramic views.</p>
+                            <div class="trail-meta">
+                                <span><i class="fas fa-route"></i> 2.8 miles</span>
+                                <span><i class="fas fa-mountain"></i> 750 ft elevation</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 55 min from Asheville</span>
+                            </div>
+                            <a href="posts/fryingpan-lookout.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="trail-card">
+                        <div class="trail-image">
+                            <img src="images/pexels-cree-mciver-541509555-18985107.jpg" alt="Pilot Cove Loop Trail">
+                        </div>
+                        <div class="trail-content">
+                            <span class="trail-difficulty moderate">Moderate</span>
+                            <h3><a href="posts/pilot-cove-loop.html">Pilot Cove Loop Trail</a></h3>
+                            <p>A peaceful forest loop with diverse plant life, seasonal streams, and glimpses of distant mountain ridges.</p>
+                            <div class="trail-meta">
+                                <span><i class="fas fa-route"></i> 4.3 miles</span>
+                                <span><i class="fas fa-mountain"></i> 950 ft elevation</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 35 min from Asheville</span>
+                            </div>
+                            <a href="posts/pilot-cove-loop.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="trail-card">
+                        <div class="trail-image">
+                            <img src="images/pexels-federated-art-241849155-12493796.jpg" alt="Seniard Ridge Trail">
+                        </div>
+                        <div class="trail-content">
+                            <span class="trail-difficulty challenging">Challenging</span>
+                            <h3><a href="posts/seniard-ridge.html">Seniard Ridge Trail</a></h3>
+                            <p>A rugged, less-traveled ridge trail offering solitude and rewarding views of the Middle Prong Wilderness.</p>
+                            <div class="trail-meta">
+                                <span><i class="fas fa-route"></i> 7.2 miles</span>
+                                <span><i class="fas fa-mountain"></i> 1,800 ft elevation</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 60 min from Asheville</span>
+                            </div>
+                            <a href="posts/seniard-ridge.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="pagination">
+                    <span class="current-page">Page 1 of 2</span>
+                    <div class="page-buttons">
+                        <span class="page-button current">1</span>
+                        <a href="#" class="page-button">2</a>
+                        <a href="#" class="page-button next"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trail-tips">
+            <div class="container">
+                <h2>Trail Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Navigation</h3>
+                        <p>Cell service is limited in many areas. Download offline maps before heading out, and consider carrying a physical map as backup.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <i class="fas fa-tint"></i>
+                        <h3>Water Sources</h3>
+                        <p>Always carry more water than you think you'll need, especially in summer. Many trails have unreliable water sources.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <i class="fas fa-paw"></i>
+                        <h3>Wildlife</h3>
+                        <p>Black bears are active in the area. Make noise while hiking, store food properly, and keep dogs leashed.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Leave No Trace</h3>
+                        <p>Help preserve these hidden gems by packing out all trash, staying on established trails, and respecting wildlife.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Hidden Trails Asheville</h3>
+                    <p>Sharing the beauty and serenity of Asheville's lesser-known natural wonders since 2023.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="trails.html">Trails</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hidden Trails Asheville. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
